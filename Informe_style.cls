@@ -1,3 +1,8 @@
+% Author: Juan Gallostra Acín
+% Date: 27-11-2016
+% This template is intended to be used in Lab reports at ETSEIB's school 
+
+
 % Preprocessor
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Informe_style}
