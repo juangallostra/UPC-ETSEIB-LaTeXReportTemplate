@@ -18,5 +18,12 @@ It is easy to customize and can be modified to suit one's particular needs.
 2. Place the files and the folder in the same directory.
 3. Inside Informe_style.cs modify the parametres that are surronded by ##, such as ## Date ## by the actual information of the specific report (As a LaTeX editor I pesonally use Texmaker: http://www.xm1math.net/texmaker/).
 4. Do the same as in step 3 but this time in the file Informe.tex
-5. In the same directory where the files are located create a .tex file for every chapter/problem/exercise that should be included in the report and include them in the Informe.tex file via the \include{name_of_file} command
+5. In the same directory where the files are located create a .tex file for every chapter/problem/exercise that should be included in the report and include them in the Informe.tex file via the \include{name_of_file} command. This files should start with the command:
+
+ \chapter{## Exercise/Problem name ##}
+ 
+ \label{ch:## Chapter Label ##}
+ 
+ So that it is indicated that they are the starting point of a new exercise/problem.
+
 6. Write the paticular report for each of the execises/problems and compile the main file Informe.tex to obtain the resulting report in pdf. 
