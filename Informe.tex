@@ -1,0 +1,54 @@
+\documentclass[a4paper]{Informe_style}
+
+%\includeonly{glosario,introduccion}
+
+\usepackage{amsmath}
+
+
+%\newcounter{eqn}
+%\renewcommand*{\theeqn}{\alph{eqn})}
+%\newcommand{\num}{\refstepcounter{eqn}\text{\theeqn}\;}
+
+\makeatletter
+\newcommand{\putindeepbox}[2][0.7\baselineskip]{{%
+    \setbox0=\hbox{#2}%
+    \setbox0=\vbox{\noindent\hsize=\wd0\unhbox0}
+    \@tempdima=\dp0
+    \advance\@tempdima by \ht0
+    \advance\@tempdima by -#1\relax
+    \dp0=\@tempdima
+    \ht0=#1\relax
+    \box0
+}}
+\makeatother
+
+\begin{document}
+
+\title{Optimization in Control and Robotics\\
+Lab 2. Discrete Optimization\\
+Report}
+\author{Juan Gallostra Acín}
+\date{November 2016}
+
+\maketitle
+%\afterpage{\blankpage}
+
+\setcounter{page}{1}
+
+%\tableofcontents
+%\addcontentsline{toc}{chapter}{\contentsname}
+%\listoffigures
+%\addcontentsline{toc}{chapter}{\listfigurename}
+%\listoftables
+%\addcontentsline{toc}{chapter}{\listtablename}
+
+%\let\clearpage\relax
+%\include{OL_1}
+%\include{OL_2}
+\include{OL_1}
+\include{OL_2}
+\include{OL_3}
+\include{OL_4}
+
+
+\end{document}
