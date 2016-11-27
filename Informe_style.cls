@@ -5,7 +5,7 @@
 
 \ProcessOptions
 
-% Specific contents of TFG class
+% Modifying contents of class
 \LoadClass{report}
 
 % Euro Symbol handling
@@ -23,7 +23,6 @@
 \setcounter{secnumdepth}{5}
 \setlength{\parindent}{1em}
 \setlength{\parskip}{1em}
-%\raggedbottom
 
 % Manage blank pages
 \usepackage{afterpage}
@@ -40,20 +39,20 @@
 % Change values in total to modify the usable space in page (and hence, the margins)
 \usepackage[a4paper, total={6.5in, 9.75in}]{geometry}
 
+% two sided specifications will only be applied if document is set to be two sidded.
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 % Common
-\fancyhead[LE,RO]{Lab 2. Discrete Optimization.\\Juan Gallostra Acín\\November 2016}
+\fancyhead[LE,RO]{## Report tittle ##\\## Author's name ##\\## Date ##}
 \fancyfoot[CO,CE]{}
 % Even pages - Left pages
-\fancyhead[RE]{Lab 2. Discrete Optimization.\\Juan Gallostra Acín\\November 2016}
+\fancyhead[RE]{## Report tittle ##\\## Author's name ##\\## Date ##}
 \fancyfoot[LE]{\thepage}
 % Odd pages - Right pages
 \fancyhead[LO]{\includegraphics[scale=0.45]{ETSEIB.PNG}}
 \fancyfoot[RO]{\thepage}
 
-
-% Some hacking-chapter redefining
+% Some chapter redefining
 \usepackage{etoolbox}
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 
