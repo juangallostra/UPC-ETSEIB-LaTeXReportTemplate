@@ -39,7 +39,7 @@
 % Change values in total to modify the usable space in page (and hence, the margins)
 \usepackage[a4paper, total={6.5in, 9.75in}]{geometry}
 
-% two sided specifications will only be applied if document is set to be two sidded.
+% two sided specifications will only be applied if document is set to be two sided.
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 % Common
