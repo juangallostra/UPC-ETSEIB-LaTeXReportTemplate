@@ -20,10 +20,11 @@ It is easy to customize and can be modified to suit one's particular needs.
 4. Do the same as in step 3 but this time in the file Informe.tex
 5. In the same directory where the files are located create a .tex file for every chapter/problem/exercise that should be included in the report and include them in the Informe.tex file via the \include{name_of_file} command. This files should start with the command:
 
- \chapter{## Exercise/Problem name ##}
+ ``` latex
+  \chapter{## Exercise/Problem name ##}
  
- \label{ch:## Chapter Label ##}
- 
+  \label{ch:## Chapter Label ##}
+ ```
  So that it is indicated that they are the starting point of a new exercise/problem.
 
 6. Write the paticular report for each of the execises/problems and compile the main file Informe.tex to obtain the resulting report in pdf. 
