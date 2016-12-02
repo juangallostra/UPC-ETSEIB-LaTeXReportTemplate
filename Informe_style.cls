@@ -133,4 +133,43 @@
 \usepackage{amsmath,amsthm}
 \newtheorem{lem}{Theorem}
 
+% Defining square cell tables
+% Credits to: Will Robertson
+% Source : https://tug.org/pracjourn/2005-2/robertson/robertson.pdf
+%		   The PracTEX Journal
+%          TPJ 2005 No 02,2005-04-15
+%          Rev. 2005-03-25
+%
+% Use it as:
+%
+% \begin{squarecells}{4}
+%	16 & 3 & 2 & 13 \nl
+% 	5 & 10 & 11 & 8 \nl
+% 	9 & 6 & 7 & 12 \nl
+% 	4 & 15 & 14 & 1 \nl
+% \end{squarecells}
+%
+\usepackage{array}[2003/12/17]
+\usepackage{calc}
+
+\newlength\celldim \newlength\fontheight \newlength\extraheight
+
+\newcounter{sqcolumns}
+
+\newcolumntype{S}{ @{}
+>{\centering \rule[-0.5\extraheight]{0pt}{\fontheight + \extraheight}}
+p{\celldim} @{} }
+
+\newcolumntype{Z}{ @{} >{\centering} p{\celldim} @{} }
+
+\newenvironment{squarecells}[1]
+{\setlength\celldim{2em}%
+\settoheight\fontheight{A}%
+\setlength\extraheight{\celldim - \fontheight}%
+\setcounter{sqcolumns}{#1 - 1}%
+\begin{tabular}{|S|*{\value{sqcolumns}}{Z|}}\hline}
+% squarecells tabular goes here
+{\end{tabular}}
+\newcommand\nl{\tabularnewline\hline} 
+
 \endinput
