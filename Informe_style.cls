@@ -48,10 +48,10 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 % Common
-\fancyhead[LE,RO]{## Report tittle ##\\## Author's name ##\\## Date ##}
+\fancyhead[LE,RO]{## Report title ##\\## Author's name ##\\## Date ##}
 \fancyfoot[CO,CE]{}
 % Even pages - Left pages
-\fancyhead[RE]{## Report tittle ##\\## Author's name ##\\## Date ##}
+\fancyhead[RE]{## Report title ##\\## Author's name ##\\## Date ##}
 \fancyfoot[LE]{\thepage}
 % Odd pages - Right pages
 \fancyhead[LO]{\includegraphics[scale=0.45]{ETSEIB.PNG}}
