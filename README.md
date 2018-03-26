@@ -1,4 +1,4 @@
-# UPC_ETSEIB_LaTeXReportTemplate
+# UPC-ETSEIB-LaTeXReportTemplate
 
 The presented files provide a general template for creating Lab reports in LaTeX. It is aimed at students from ETSEIB's School.
 It is easy to customize and can be modified to suit one's particular needs.
